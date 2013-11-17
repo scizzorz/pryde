@@ -1,0 +1,151 @@
+@import "scss/_include.scss";
+
+html {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: $fontsize;
+	color: $foreground;
+	background-color: $background;
+}
+
+html, body, #container {
+	padding: 0;
+	margin: 0;
+}
+
+html, #container, section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+section {
+	margin: 0;
+	padding: 3em;
+	line-height: 1.5em;
+	text-align: justify;
+	border: 1px solid $strong;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	padding: 0;
+	margin: 0;
+	color: $strong;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.67em;
+}
+h3 {
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+strong {
+	color: $strong;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+iframe, img {
+	margin: 1em auto;
+	padding: 0;
+	display: block;
+	max-width: 40em;
+	background-color: darken($background, 5%);
+	border: 1px solid $shade;
+}
+
+blockquote, pre {
+	display: block;
+	margin: 1em;
+	border: 1px solid $borders;
+	background-color: darken($background, 5%);
+}
+
+blockquote {
+	padding: 1px 0.5em;
+}
+
+blockquote small {
+	display: block;
+	color: $shade;
+	margin: 1em 0;
+	font-size: $fontsize;
+}
+blockquote small:before {
+	content: "~ ";
+}
+
+pre {
+	padding: 1em 0.5em;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+
+	code {
+		display: block;
+		border: none;
+	}
+}
+
+code {
+	background-color: darken($background, 5%);
+	display: inline-block;
+	font-family: SourceCodePro;
+	text-transform: none !important; // NEVER change code case
+	border: 1px solid $borders;
+	padding: 0 0.3em;
+	margin: 1px 0;
+}
+
+a {
+	color: $accent;
+	text-decoration: none;
+	@include color-transition;
+	code {
+		border-color: $borders;
+	}
+	&:hover {
+		color: $hover;
+	}
+}
+
+ul, ol {
+	padding: 0 1em 0 2em;
+}
+
+table {
+	width: 100%;
+	margin: 1em 0;
+	th {
+		text-align: left;
+		text-transform: uppercase;
+	}
+	td {
+		padding: 0.3em;
+	}
+}
+
+.content {
+	margin: 1em 0;
+	padding: 0;
+}
+
+hr {
+	margin: 0.3em 0;
+	border: none;
+	border-bottom: 1px solid $borders;
+}
