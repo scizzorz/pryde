@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ title }}</title>
+		<link rel="icon" type="image/png" href="/static/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/slush.css">
+		<link rel="stylesheet" type="text/css" href="/static/main.css">
+		<script src="/static/jquery.min.js"></script>
+		<script src="/static/rainbow/rainbow.min.js"></script>
+		<script src="/static/rainbow/language/generic.js"></script>
+		{% for lang in languages %}
+			<script src="/static/rainbow/language/{{ lang }}.js"></script>
+		{% endfor %}
+		<script src="/static/main.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			{{ content|safe }}
+		</div>
+	</body>
+</html>

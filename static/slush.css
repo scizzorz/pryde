@@ -1,0 +1,31 @@
+code .comment {
+	color: hsl(270, 80%, 40%);
+}
+
+code .support, code .tag, code .tag-name, code .function.call, code .keyword, code .storage.function {
+	color: hsl(210, 80%, 40%);
+}
+
+code .support.magic {
+	color: hsl(150, 80%, 40%);
+}
+
+code .keyword.operator {
+	color: inherit;
+}
+
+code .regexp, code .string, code .support.value, code .constant, code .keyword.unit, code .hex-color {
+	color: hsl(30, 80%, 40%);
+}
+
+code .storage.type, .entity.class {
+	color: hsl(240, 80%, 40%);
+}
+
+code .entity.name, code .entity.id, code .entity.function {
+	color: hsl(180, 80%, 40%);
+}
+
+code .attribute, code .variable {
+	color: hsl(180, 80%, 40%);
+}
