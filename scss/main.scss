@@ -10,14 +10,17 @@ html {
 html, body, #container {
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 html, #container, section {
 	position: absolute;
 	top: 0;
-	right: 0;
 	bottom: 0;
 	left: 0;
+}
+html, #container {
+	right: 0;
 }
 
 section {
@@ -25,7 +28,6 @@ section {
 	padding: 3em;
 	line-height: 1.5em;
 	text-align: justify;
-	border: 1px solid $strong;
 	box-sizing: border-box;
 }
 
